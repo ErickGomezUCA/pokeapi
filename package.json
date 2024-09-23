@@ -1,0 +1,18 @@
+{
+  "name": "my-amplify-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build:html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true -o dist/index.html src/index.html",
+    "build:js": "terser src/app.js -o dist/app.min.js",
+    "build": "npm run build:html && npm run build:js"
+  },
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "terser": "^5.14.2"
+  },
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
